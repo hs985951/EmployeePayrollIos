@@ -26,14 +26,14 @@
                                 <rect key="frame" x="47" y="46" width="280" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18050631463069905" green="0.61757205310880825" blue="0.25219688173087235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="DzI-On-G87" kind="show" id="rui-im-dd2"/>
+                        <segue destination="DzI-On-G87" kind="show" identifier="showloginscreen" id="rui-im-dd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,6 +81,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="Loginbtn:" destination="DzI-On-G87" eventType="touchUpInside" id="V91-PP-0YC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7u-nB-Zgx">
                                 <rect key="frame" x="159" y="389" width="28" height="24"/>
@@ -106,6 +109,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FKu-M7-BsB"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordtxt" destination="GRp-Nt-MoB" id="16Y-Ya-sqJ"/>
+                        <outlet property="useridtxt" destination="eXg-aS-rGH" id="Fe5-xn-Viz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlu-6V-TQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

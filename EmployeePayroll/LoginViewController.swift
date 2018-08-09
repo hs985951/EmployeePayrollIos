@@ -10,6 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var useridtxt: UITextField!
+    @IBOutlet weak var passwordtxt: UITextField!
+    @IBAction func Loginbtn(_ sender: Any) {
+        if useridtxt.text == "admin" && passwordtxt.text == "password" {
+            performSegue(withIdentifier: "AddEmployeeViewController", sender: self)
+            
+        } else {
+            print("error")
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
