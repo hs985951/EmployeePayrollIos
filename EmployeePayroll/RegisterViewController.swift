@@ -9,7 +9,46 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
+    public var registerArray: [SignUp] = [SignUp]()
+    
+    @IBOutlet weak var nametxt: UITextField!
+    @IBOutlet weak var useridtxt: UITextField!
+    @IBOutlet weak var passwordtxt: UITextField!
+    @IBOutlet weak var reenterpasswordtxt: UITextField!
+   
+    
+    @IBOutlet weak var registerbtn: UIButton!
+    
+    @IBAction func registerbtn(_ sender: Any) {
+        let  signUpEmployee = SignUp()
+        signUpEmployee.empName = nametxt.text!
+        signUpEmployee.empEmailId = useridtxt.text!
+        // confirming both password are same
+        if (passwordtxt.text == reenterpasswordtxt.text ){
+            signUpEmployee.empPassword = passwordtxt.text!
+            registerArray.append(signUpEmployee)
+            let myAlert = UIAlertController(title: "Alert", message: "SignUp Sucessfully!! Move to login Screen", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert,animated: true, completion: nil)
+        } else {
+            let myAlert = UIAlertController(title: "Alert", message: "password Do not Match", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert,animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func backbtn(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +61,7 @@ class RegisterViewController: UIViewController {
     }
     
 
+    
     /*
     // MARK: - Navigation
 

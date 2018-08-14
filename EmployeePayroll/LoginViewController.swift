@@ -12,14 +12,31 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var useridtxt: UITextField!
     @IBOutlet weak var passwordtxt: UITextField!
+    
+    @IBOutlet weak var rem: UISwitch!
+    
     @IBAction func Loginbtn(_ sender: Any) {
         if useridtxt.text == "admin" && passwordtxt.text == "password" {
             performSegue(withIdentifier: "AddEmployeeViewController", sender: self)
             
         } else {
-            print("error")
+            let alert = UIAlertController(title: "Alert", message: "Wrong Id or Password", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func Registerbtn(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let registerViewController = storyboard?.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterViewController
+        self.present(registerViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func remembermebtn(_ sender: Any) {
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
