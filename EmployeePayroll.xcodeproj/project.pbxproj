@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9BA2D99A2123654A00270E4B /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2D9992123654A00270E4B /* RegisterUser.swift */; };
+		9BA2D99C2123767A00270E4B /* employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2D99B2123767A00270E4B /* employee.swift */; };
 		9BAFDC26211CD477005BA455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAFDC25211CD477005BA455 /* AppDelegate.swift */; };
 		9BAFDC28211CD477005BA455 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAFDC27211CD477005BA455 /* IntroViewController.swift */; };
 		9BAFDC2B211CD477005BA455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAFDC29211CD477005BA455 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		9BA2D9992123654A00270E4B /* RegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUser.swift; sourceTree = "<group>"; };
+		9BA2D99B2123767A00270E4B /* employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employee.swift; sourceTree = "<group>"; };
 		9BAFDC22211CD477005BA455 /* EmployeePayroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeePayroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAFDC25211CD477005BA455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BAFDC27211CD477005BA455 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				9BAFDC2C211CD478005BA455 /* Assets.xcassets */,
 				9BAFDC2E211CD478005BA455 /* LaunchScreen.storyboard */,
 				9BAFDC31211CD478005BA455 /* Info.plist */,
+				9BA2D99B2123767A00270E4B /* employee.swift */,
 			);
 			path = EmployeePayroll;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAFDC54211CD4AE005BA455 /* LoginViewController.swift in Sources */,
+				9BA2D99C2123767A00270E4B /* employee.swift in Sources */,
 				9BAFDC28211CD477005BA455 /* IntroViewController.swift in Sources */,
 				9BAFDC26211CD477005BA455 /* AppDelegate.swift in Sources */,
 				9BAFDC56211CD4C1005BA455 /* RegisterViewController.swift in Sources */,
