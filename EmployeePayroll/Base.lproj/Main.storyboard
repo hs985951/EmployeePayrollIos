@@ -238,57 +238,6 @@
             </objects>
             <point key="canvasLocation" x="389.60000000000002" y="17.541229385307346"/>
         </scene>
-        <!--Add Employee View Controller-->
-        <scene sceneID="AMr-c0-E0M">
-            <objects>
-                <viewController id="p2T-y5-Vcc" customClass="AddEmployeeViewController" customModule="EmployeePayroll" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SeM-Iu-nYb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Employee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2g-GT-fCE">
-                                <rect key="frame" x="113" y="46" width="148" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EmployeeId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-Cr-gLa">
-                                <rect key="frame" x="38" y="127" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Employee Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKH-0Q-8E7">
-                                <rect key="frame" x="38" y="171" width="124" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gEH-zN-45t">
-                                <rect key="frame" x="63" y="227" width="203" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Fulltime"/>
-                                    <segment title="Parttime"/>
-                                    <segment title="Intern"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6jO-Xh-cFn"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="1Zd-W9-IVF"/>
-                    <connections>
-                        <segue destination="faN-lR-a6N" kind="show" id="No8-mV-ybR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlh-EY-4LE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2048.8000000000002" y="16.641679160419791"/>
-        </scene>
         <!--Employee Detail View Controller-->
         <scene sceneID="oiG-l1-fPq">
             <objects>
@@ -302,7 +251,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bac-Td-bIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2764" y="17.541229385307346"/>
+            <point key="canvasLocation" x="4103" y="197"/>
+        </scene>
+        <!--Intern-->
+        <scene sceneID="BOR-gE-ZAc">
+            <objects>
+                <viewController title="Intern" id="Uqc-JO-XrU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Afq-U5-twI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oDY-iE-SMm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="gns-wB-1bp"/>
+                    <connections>
+                        <segue destination="faN-lR-a6N" kind="show" id="oBm-Nf-PGK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2b-xw-3Ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3054" y="275"/>
+        </scene>
+        <!--Parttime Employee-->
+        <scene sceneID="VqE-cS-W9F">
+            <objects>
+                <viewController title="Parttime Employee" id="rrK-eC-pBN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a4n-RT-AIS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wuh-XD-JWq"/>
+                    </view>
+                    <connections>
+                        <segue destination="faN-lR-a6N" kind="show" id="kc4-dc-EKu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyb-Bh-UQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3054" y="929"/>
+        </scene>
+        <!--Fulltime Employee-->
+        <scene sceneID="Qlz-sW-LCP">
+            <objects>
+                <viewController title="Fulltime Employee" id="ttE-B7-PlF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yda-IE-nlc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iea-G7-tJ6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="wZj-Gq-ebD"/>
+                    <connections>
+                        <segue destination="faN-lR-a6N" kind="show" id="Fwg-he-wDF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqM-Wj-AIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3055" y="-378"/>
+        </scene>
+        <!--Add employee-->
+        <scene sceneID="Ax4-OE-UMc">
+            <objects>
+                <tabBarController title="Add employee" id="Hya-qM-8yB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WE8-36-avd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ttE-B7-PlF" kind="relationship" relationship="viewControllers" id="JbV-DE-4yB"/>
+                        <segue destination="Uqc-JO-XrU" kind="relationship" relationship="viewControllers" id="X2A-oI-wEm"/>
+                        <segue destination="rrK-eC-pBN" kind="show" id="LAz-oz-fuu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udr-wj-B0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2007" y="18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="erb-Q9-XdM">
@@ -315,7 +339,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="p2T-y5-Vcc" kind="relationship" relationship="rootViewController" id="X3H-bh-JEd"/>
+                        <segue destination="Hya-qM-8yB" kind="show" id="5Hq-fr-7xP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YyK-Yc-8Bp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -328,4 +352,7 @@
         <image name="registration-info.png" width="706" height="292"/>
         <image name="thats-my-billing-payroll-icon.png" width="904" height="893"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fwg-he-wDF"/>
+    </inferredMetricsTieBreakers>
 </document>
