@@ -10,6 +10,12 @@ import UIKit
 
 class AddEmployeeViewController: UIViewController {
 
+    @IBOutlet weak var EmployeeID: UITextField!
+    @IBOutlet weak var EmployeeName: UITextField!
+    @IBOutlet weak var EmployeeAGE: UITextField!
+    @IBAction func VehicleCheck(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
