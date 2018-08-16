@@ -13,7 +13,7 @@ class employee {
     var EmployeeEmail: String?
     var Password : String?
     var ReEnterPassword: String?
-    
+    var typevehicle: String?
     
     
 }

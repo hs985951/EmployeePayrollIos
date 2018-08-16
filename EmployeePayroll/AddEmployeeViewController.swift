@@ -9,12 +9,31 @@
 import UIKit
 
 class AddEmployeeViewController: UIViewController {
-
+    var Employee = employee()
     @IBOutlet weak var EmployeeID: UITextField!
     @IBOutlet weak var EmployeeName: UITextField!
     @IBOutlet weak var EmployeeAGE: UITextField!
+    @IBOutlet weak var make: UITextField!
+    @IBOutlet weak var plate: UITextField!
+    @IBOutlet weak var Typevehicle: UISegmentedControl!
     @IBAction func VehicleCheck(_ sender: Any) {
     }
+    
+    @IBAction func TypeVehicle(_ sender: UISegmentedControl) {
+        switch (Typevehicle.selectedSegmentIndex) {
+        case 0:
+            make.isHidden = true
+            Employee.typevehicle = "Car"
+        case 1:
+            plate.isHidden = true
+            Employee.typevehicle = "Bike"
+        default:
+            break
+    }
+    }
+        @IBAction func fulltimebutton(_ sender: Any) {
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,3 +58,4 @@ class AddEmployeeViewController: UIViewController {
     */
 
 }
+
