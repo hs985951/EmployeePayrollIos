@@ -346,6 +346,9 @@
                                     <segment title="Car"/>
                                     <segment title="Bike"/>
                                 </segments>
+                                <connections>
+                                    <action selector="TypeVehicle:" destination="vPv-4C-Y7F" eventType="valueChanged" id="bEn-Xf-TFt"/>
+                                </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sto-DP-UQT">
                                 <rect key="frame" x="40" y="230" width="49" height="31"/>
@@ -382,6 +385,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Full Time"/>
                                 <connections>
+                                    <action selector="fulltimebutton:" destination="vPv-4C-Y7F" eventType="touchUpInside" id="Sna-6b-VLN"/>
                                     <segue destination="ttE-B7-PlF" kind="show" id="AST-Zr-9K9"/>
                                 </connections>
                             </button>
@@ -414,6 +418,8 @@
                         <outlet property="EmployeeAGE" destination="fOC-uJ-VWe" id="4ha-NM-Inj"/>
                         <outlet property="EmployeeID" destination="IwA-aj-8I3" id="NCN-XJ-y4W"/>
                         <outlet property="EmployeeName" destination="LXz-t9-WjN" id="249-dI-27Y"/>
+                        <outlet property="make" destination="lHU-2m-GdN" id="Iwx-Dl-07P"/>
+                        <outlet property="plate" destination="YNb-m4-VWf" id="yGw-jX-rJh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5QZ-JE-zva" userLabel="First Responder" sceneMemberID="firstResponder"/>
